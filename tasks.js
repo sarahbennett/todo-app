@@ -37,7 +37,7 @@ function taskListBuilder(){
   event.preventDefault();
   var form = document.querySelector("form");
   // Create a new task with form values
-  var newTask = form.task.value;
+  var newTask = form.assignment.value + " needs to " + form.task.value + ", which should be " + document.getElementById("difficulty").value
   // Insert new task item into tasklist.tasks
   taskList.tasks.push(newTask);
   // Trigger printing the list to page
