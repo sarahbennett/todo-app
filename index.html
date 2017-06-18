@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Get it Done! - Task App</title>
+    <script type="text/javascript" src="tasks.js"></script>
+    <link rel="stylesheet" href="styles.css"></script>
+  </head>
+  <body>
+    <h1>Let's Get Stuff Done!</h1>
+    <h3><em>Or at least tell your friends to do it</em></h3>
+<!-- A text field for the task description, i.e., walk the dog
+     A list of radio buttons of name for whom the task is assigned, i.e., Jeremy
+     A dropdown list to indicate the difficulty of the task, i.e., easy
+     On form submission, add the task to a Javascript array called tasks,
+     then update the ordered list in index.html with the task information
+     as a series of list items. -->
+     <div id="list-container"></div>
+     <div id="parent"></div>
+    <form name="to-do">
+      <label>What needs to get done?:
+        <input id="task" type="text" name="task" value="">
+      </label>
+      <fieldset>
+        <legend>Who should do this?:</legend>
+        <label>
+          <input type="radio" name="sarah" value="true">
+          Sarah
+          <input type="radio" name="nathan" value="true">
+          Nathan
+          <input type="radio" name="alice" value="true">
+          Alice
+          <input type="radio" name="bishop" value="true">
+          Bishop
+        </label>
+        <legend>Just how hard is this going to be?:</legend>
+        <select name="Difficulty">
+          <option value="hardest">Wicked Hard</option>
+          <option value="hard">Little Tricky</option>
+          <option value="easy">No Sweat</option>
+          <option value="easiest">Easy as Pie</option>
+        </select>
+      </fieldset>
+      <input type="submit">
+    </form>
+    <!-- containing an empty unordered list -->
+    <ul></ul>
+
+    <img src="/images/get-it-done.png" alt="motivating sign telling you to get shit done">
+  </body>
+</html>
